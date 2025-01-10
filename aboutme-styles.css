@@ -18,7 +18,7 @@ body {
     border-radius: 2rem;
     border: 0.2rem solid rgba(0, 122, 179, 1);
     box-shadow: 0rem 0rem 1rem rgba(0, 122, 179, 1);
-    width: 20%;
+    width: 25%;
 }
 
 .about-me{
@@ -48,6 +48,7 @@ body {
     padding-top: 0.1rem; 
     padding-left: 1%;
     padding-bottom: 0.1rem;
+    display: inline-block;
 }
 
 .caption{
@@ -59,7 +60,7 @@ body {
     background-color: var(--navbarhighlight);
     text-align: left;
     width:fit-content;
-    margin-right:25%;
+    margin-right:30%;
     border-radius: 2rem;
     padding: 1.5rem;
     font-size:1.2rem;
