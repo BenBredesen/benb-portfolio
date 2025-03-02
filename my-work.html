@@ -1,16 +1,184 @@
 <!doctype html>
-<html>
-  <head>
+<html lang="en">
+
+<style>
+    :root{
+        --navbarhighlight: #95AFBA;
+    }
+    body {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #3F7CAC;
+    }
+    .nav-bar{
+        top: 0;
+        position: fixed;
+        display: flex;
+        background-color: rgba(21, 43, 59,0.62);
+        width:70%;
+        padding-top: 2rem;
+        padding-bottom: 0.75rem;
+        padding-left: 15%;
+        padding-right: 15%;
+        gap: 0;
+        margin-top: -1.35rem;
+        margin-left: -0.5rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .project-img{
+        float: right;
+        margin: auto;
+        border-radius: 2rem;
+        width: 25%;
+
+    }
+
+/*    .project{*/
+/*        height: 100%;*/
+/*        cursor: wait;*/
+/*        margin-left: 5rem;*/
+/*        margin-right: 0rem;*/
+/*        border-radius: 3rem;*/
+/*        background-color: #2D5A7B;*/
+/*        align-items: center;*/
+/*        padding: 2rem;*/
+/*        padding-right: 1rem;*/
+/*        cursor:*/
+/*        display: flex;*/
+/*        width: 35%*/
+/*        *//*        float: left;*/
+/*    }*/
+
+    .project:hover{
+        scale: 1.05;
+        box-shadow: 0rem 0rem 2rem var(--navbarhighlight);
+    }
+
+    .project{
+        cursor: default;
+/*        margin-right: 5rem;*/
+        border-radius: 3rem;
+        margin-left: 5rem;
+        background-color: #2D5A7B;
+        padding: 2rem;
+        display: flex;
+        width: 35%;
+        cursor: pointer;
+        transition: scale 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .nav-bar-name{
+        color: var(--navbarhighlight);
+        padding-top: 0.1rem;
+        padding-left: 1%;
+        padding-bottom: 0.1rem;
+        display: inline-block;
+    }
+    .nav-bar-name{
+        color: #FFFFFF;
+        padding-top: 0.1rem;
+        margin-left: -10rem;
+        padding-bottom: 0.1rem;
+        display: inline-block;
+    }
+
+
+    .about-me-text{
+        background-color: var(--navbarhighlight);
+        text-align: left;
+        width:fit-content;
+        margin-right:30%;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        font-size:1.2rem;
+
+    }
+
+    .nav-item{
+        color: var(--navbarhighlight);
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.5rem 0.5rem;
+        margin: auto;
+        width: max-content;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        transition: scale 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-item:hover{
+    /*    color: #E3815F;*/
+        color: #FFFFFF;
+        scale: 1.3;
+    }
+    .nav-item-selected{
+        color: #FFFFFF;
+        scale: 1.3;
+        font-size: 1rem;
+        cursor: default;
+        padding: 0.5rem 0.5rem;
+        margin: auto;
+        width: max-content;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        transition: scale 0.3s ease, color 0.3s ease;
+    }
+    .space{
+        margin-top: 5rem;
+    }
+</style>
+<script>const currentPage = 'work'</script>
+<head>
     <title>
-      Other Page | Ben Bredesen's Portfolio
+        My Work | Ben Bredesen's Portfolio
     </title>
-  </head>
-  <body>
-    <h1>
-      This is another page!
-    </h1>
-    <p>
-      Here is a <a href="index.html">link</a> back to the home page
-    </p>
-  </body>
+    <link rel="icon" type="image/x-icon" href="images/page-icon.ico">
+    <link rel="canonical" href="https://benbredesen.github.io/benb-portfolio/home-page">
+</head>
+<body>
+<div class="nav-bar">
+    <div class="nav-bar-name"><h1>Ben Bredesen</h1></div>
+    <h2 class="nav-item" id="navbar-home">About-Me</h2>
+    <h2 class="nav-item-selected" id="navbar-work">My Work</h2>
+    <h2 class="nav-item" id="navbar-other">Other</h2>
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="project" id="python">
+    <div>
+        <img class="project-img" src="images/python-logo.png" alt="python logo">
+        <div class="about-me-text">
+            <h2>Python</h2>
+            <p>I started learning python in a high school computer science class. I've used python in a variety of
+                projects, from games to data analysis.</p>
+        </div>
+    </div>
+</div>
+<div class="project" id="godot">
+    <div>
+        <img class="project-img" src="images/godot-logo.png" alt="godot logo">
+        <div class="about-me-text">
+            <h2>Godot</h2>
+            <p>I've used the Godot game engine for a few smaller projects, as well as a larger game that I'm actively
+                working on.</p>
+        </div>
+    </div>
+</div>
+<div class="project" id="assets">
+    <div>
+        <img class="project-img" src="images/assets-logo.png" alt="assets logo">
+        <div class="about-me-text">
+            <h2>Assets</h2>
+            <p>Throughout my projects, I've made various assets of multiple types. None of these assets have any licence.</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
 </html>
+
+<script src="navbar.js"></script>
+<script src="my-work.js"></script>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+
+<style>
+  :root{
+    --navbarhighlight: #95AFBA;
+  }
+  body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #3F7CAC;
+  }
+  .nav-bar{
+    top: 0;
+    position: fixed;
+    display: flex;
+    background-color: rgba(21, 43, 59,0.62);
+    width:70%;
+    padding-top: 2rem;
+    padding-bottom: 0.75rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 0;
+    margin-top: -1.35rem;
+    margin-left: -0.5rem;
+    text-align: center;
+    z-index: 1000;
+  }
+  .project-img-right{
+    float: right;
+    margin: 0rem;
+    border-radius: 1rem;
+    border: 0.2rem solid rgba(0, 122, 179, 1);
+    box-shadow: 0rem 0rem 1rem rgba(0, 122, 179, 1);
+    width: 25%;
+  }
+
+  .project{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 3rem;
+    background-color: #2D5A7B;
+    padding: 2rem;
+    display: flex;
+  }
+  .nav-bar-name{
+    color: var(--navbarhighlight);
+    padding-top: 0.1rem;
+    padding-left: 1%;
+    padding-bottom: 0.1rem;
+    display: inline-block;
+  }
+  .nav-bar-image{
+    width:10%;
+  }
+  .nav-bar-name{
+    color: #FFFFFF;
+    padding-top: 0.1rem;
+    margin-left: -10rem;
+    padding-bottom: 0.1rem;
+    display: inline-block;
+  }
+
+
+  .project-text{
+    background-color: var(--navbarhighlight);
+    text-align: left;
+    width:fit-content;
+    margin-right:30%;
+    border-radius: 2rem;
+    padding: 1px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    font-size:1.2rem;
+
+  }
+
+
+  .nav-item{
+    color: var(--navbarhighlight);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    margin: auto;
+    width: max-content;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    transition: scale 0.3s ease, color 0.3s ease;
+  }
+
+  .nav-item:hover{
+  /*    color: #E3815F;*/
+    color: #FFFFFF;
+    scale: 1.3;
+  }
+  .nav-item-selected{
+    color: #FFFFFF;
+    scale: 1.3;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    cursor: default;
+    margin: auto;
+    width: max-content;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    transition: scale 0.3s ease, color 0.3s ease;
+  }
+
+  .project-title{
+    background-color: var(--navbarhighlight);
+    text-align: center;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin-top: -2.5rem;
+    box-sizing: content-box;
+  }
+</style>
+<script>const currentPage = 'assets'</script>
+<head>
+  <title>
+    Assets | Ben Bredesen's Portfolio
+  </title>
+  <link rel="icon" type="image/x-icon" href="images/page-icon.ico">
+  <link rel="canonical" href="https://benbredesen.github.io/benb-portfolio/home-page">
+</head>
+<body>
+<div class="nav-bar">
+  <div class="nav-bar-name"><h1>Ben Bredesen</h1></div>
+  <h2 class='nav-item' id="navbar-home">About-Me</h2>
+  <h2 class="nav-item-selected" id="navbar-work">My Work</h2>
+  <h2 class="nav-item" id="navbar-other">Other</h2>
+</div>
+<br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<div class="project">
+  <div>
+    <div class="project-title">
+      <h2>Olympic Track and Field Trends</h2>
+    </div>
+    <img class="project-img-right" src="images/tf-olympic-project.png" alt="running img">
+    <div class="project-text">
+      <p>As an introduction to data science, I made a series of python scripts using </p>
+    </div>
+  </div>
+</div>
+</body>
+
+
+</html>
+
+<script src="navbar.js"></script>
