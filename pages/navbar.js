@@ -1,7 +1,7 @@
 function loadNav() {
     if (currentPage != "home") {
         document.getElementById("navbar-home").addEventListener("click", () => {
-            window.location.href = "index.html";
+            window.location.href = "about-me.html";
             return;
         });
     }
