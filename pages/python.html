@@ -1,60 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-<style>
-    body {
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color: #3F7CAC;
-    }
-    .project-img-right{
-        float: right;
-        margin: 0rem;
-        border-radius: 1rem;
-/*        border: 0.2rem solid rgba(0, 122, 179, 1);*/
-        box-shadow: 0rem 0rem 2rem var(--navbarhighlight);
-        width: 37%;
-    }
-
-    .project{
-        margin-left: 5rem;
-        margin-right: 5rem;
-        border-radius: 3rem;
-        background-color: #2D5A7B;
-        padding: 2rem;
-        display: flex;
-    }
-
-
-    .project-text{
-        background-color: var(--navbarhighlight);
-        text-align: left;
-        width:fit-content;
-        margin-right:40%;
-        border-radius: 2rem;
-        padding: 1px;
-        padding-left: 1rem;
-        padding-right: 0.5rem;
-        font-size:1.2rem;
-
-    }
-
-
-    .project-title{
-        background-color: var(--navbarhighlight);
-        text-align: center;
-        width:60%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 1rem;
-        font-size: 2rem;
-        margin-top: -2.5rem;
-        box-sizing: content-box;
-    }
-    a{
-        color: inherit;
-    }
-</style>
 <script>const currentPage = 'python'</script>
 <head>
     <title>
@@ -63,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../images/page-icon.ico">
     <link rel="canonical" href="https://benbredesen.github.io/benb-portfolio/about-me">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
 <div class="nav-bar">
@@ -82,7 +29,8 @@
         <div class="project-title">
             <h2>Olympic Track and Field Trends</h2>
         </div>
-        <img class="project-img-right" src="../images/tf-olympic-project.png" alt="running img">
+        <img class="project-img-right" src="../images/tf-olympic-project.png" alt="tf olympic data graph">
+        <img class="project-img-right" src="../images/tf-olympic-project-2.png" alt="tf olympic data graph">
         <div class="project-text">
             <h3><b>Graphical Evidence of Track and Field Innovation</b></h3>
             <p>As an introduction to data science, I made a series of python scripts which generate graphs using
@@ -105,6 +53,61 @@
     </div>
 </div>
 
+<div class="space"></div>
+
+<!-- Ball Breakout -->
+<div class="project">
+    <div>
+        <div class="project-title">
+            <h2>Ball Breakout Game</h2>
+        </div>
+        <img class="project-img-right" src="../images/ball-breakout.png" alt="ball breakout game">
+        <img class="project-img-right" src="../images/ball-breakout-purchase.png"
+             alt="ball breakout game- purchase balls">
+        <img class="project-img-right" src="../images/ball-breakout-upgrade.png" alt="ball breakout game- upgrades">
+        <div class="project-text">
+            <h3><b>A Simple, Fun Game</b></h3>
+            <p>In Ball Breakout, the user must direct and buy bouncing balls to break blocks that spawn in waves across the board. The player gains money from each block broken and has to manage their funds effectively to balance buying and upgrading various types of balls. They also need to balance buying different types of balls as some balls work well against strong bricks and some balls work better against groups of bricks. Not only does the user buy balls, but each ball has various attributes that can be upgraded to improve anything from damage to accuracy.</p>
+            <br>
+            <h3><b>Features and Usage</b></h3>
+            <p>To play the game, go to
+                <a href="https://academy.cs.cmu.edu/sharing/limeGreenKitten8394">this link</a>.
+                Follow the in-game tutorial to buy your first ball, then return to the main screen and watch it break the blocks. Return to the purchase page to buy more balls or visit the upgrade page to upgrade your existing balls. Ball Breakout is a single-player game that continues infinitely.
+            </p>
+            <h3><b>Shortcuts</b></h3>
+            <p>To speed up the game, you can press Q to gain $100, or press W to spawn the next wave.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="space"></div>
+
+<!-- Markdown to HTML -->
+<div class="project">
+    <div>
+        <div class="project-title">
+            <h2>Markdown to HTML Converter</h2>
+        </div>
+        <img class="project-img-right" src="../images/mdhtml-md.png" alt="markdown to html: markdown">
+        <img class="project-img-right" src="../images/mdhtml-html.png"
+             alt="markdown to html: html">
+        <div class="project-text">
+            <h3><b>Convert Between Markdown Files and HTML Files</b></h3>
+            <p>For this project, I worked with two other students in my class to create a python file that can
+                convert basic markdown files into html code. Similar code to ours is used in most websites that can
+                display markdown. For example, GitHub uses something similar to display readme.md files on their
+                website.</p>
+            <br>
+            <h3><b>Features and Usage</b></h3>
+            <p>To use the converter, go to
+                <a href="https://github.com/Shayan-Farhan/InterPy_MdToHtmlCompiler">this</a> GitHub repository.
+                Download the markdown_converter.py file and run it in your terminal or IDE. It takes a list of
+                markdown file names as an input, and will output a new html file for each inputted file.
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 
 
