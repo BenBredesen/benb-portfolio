@@ -3,29 +3,11 @@
 
 
 <style>
-  :root{
-    --navbarhighlight: #95AFBA;
-  }
   body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #3F7CAC;
   }
-  .nav-bar{
-    top: 0;
-    position: fixed;
-    display: flex;
-    background-color: rgba(21, 43, 59,0.62);
-    width:70%;
-    padding-top: 2rem;
-    padding-bottom: 0.75rem;
-    padding-left: 15%;
-    padding-right: 15%;
-    gap: 0;
-    margin-top: -1.35rem;
-    margin-left: -0.5rem;
-    text-align: center;
-    z-index: 1000;
-  }
+
   .project-img-right{
     float: right;
     margin: 0rem;
@@ -43,24 +25,6 @@
     padding: 2rem;
     display: flex;
   }
-  .nav-bar-name{
-    color: var(--navbarhighlight);
-    padding-top: 0.1rem;
-    padding-left: 1%;
-    padding-bottom: 0.1rem;
-    display: inline-block;
-  }
-  .nav-bar-image{
-    width:10%;
-  }
-  .nav-bar-name{
-    color: #FFFFFF;
-    padding-top: 0.1rem;
-    margin-left: -10rem;
-    padding-bottom: 0.1rem;
-    display: inline-block;
-  }
-
 
   .project-text{
     background-color: var(--navbarhighlight);
@@ -76,35 +40,6 @@
   }
 
 
-  .nav-item{
-    color: var(--navbarhighlight);
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 0.5rem 0.5rem;
-    margin: auto;
-    width: max-content;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    transition: scale 0.3s ease, color 0.3s ease;
-  }
-
-  .nav-item:hover{
-  /*    color: #E3815F;*/
-    color: #FFFFFF;
-    scale: 1.3;
-  }
-  .nav-item-selected{
-    color: #FFFFFF;
-    scale: 1.3;
-    font-size: 1rem;
-    padding: 0.5rem 0.5rem;
-    cursor: default;
-    margin: auto;
-    width: max-content;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    transition: scale 0.3s ease, color 0.3s ease;
-  }
 
   .project-title{
     background-color: var(--navbarhighlight);
@@ -129,6 +64,7 @@
   </title>
   <link rel="icon" type="image/x-icon" href="../images/page-icon.ico">
   <link rel="canonical" href="https://benbredesen.github.io/benb-portfolio/home-page">
+  <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
 <div class="nav-bar">
