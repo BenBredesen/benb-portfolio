@@ -33,6 +33,7 @@
     margin-left: -10rem;
     padding-bottom: 0.1rem;
     display: inline-block;
+    cursor: default;
 }
 .nav-item{
     color: var(--navbarhighlight);

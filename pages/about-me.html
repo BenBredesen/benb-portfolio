@@ -3,52 +3,78 @@
 
 
 <style>
-  body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #3F7CAC;
-  }
-  .running-image{
-  float: right;
-  margin: 1rem;
-  border-radius: 2rem;
-  border: 0.2rem solid rgba(0, 122, 179, 1);
-  box-shadow: 0rem 0rem 1rem rgba(0, 122, 179, 1);
-  width: 25%;
-  }
+    body {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #3F7CAC;
+    }
+    .aboutme-image-top{
+        float: right;
+        margin: 1rem;
+        border-radius: 2rem;
+        border: 0.2rem solid rgba(0, 122, 179, 1);
+        box-shadow: 0rem 0rem 1rem rgba(0, 122, 179, 1);
+/*        height: 9%;*/
+/*        border-right: 5rem;*/
+/*        width: auto;*/
+        width: 24%;
+        margin-right: 5rem;
+        margin-top: 0rem;
+/*        height: 8%;*/
+    }
 
-  .about-me{
-  margin-left: 5rem;
-  margin-right: 5rem;
-  border-radius: 3rem;
-  background-color: #2D5A7B;
-  padding: 2rem;
-  display: flex;
-  }
+    .aboutme-image-bottom{
+        float: left;
+        margin: 1rem;
+        border-radius: 2rem;
+        border: 0.2rem solid rgba(0, 122, 179, 1);
+        box-shadow: 0rem 0rem 1rem rgba(0, 122, 179, 1);
+        width: 25%;
+/*        height: 30%;*/
+        margin-top: 3rem;
+        margin-right: -24rem;
+    }
 
+    .about-me{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 3rem;
+        background-color: #2D5A7B;
+        padding: 2rem;
+        display: flex;
+    }
 
-  .about-me-text{
-  background-color: var(--navbarhighlight);
-  text-align: left;
-  width:fit-content;
-  margin-right:30%;
-  border-radius: 2rem;
-  padding: 1.5rem;
-  font-size:1.2rem;
-
-  }
-
-  a{
-    color: inherit;
-  }
+    .about-me-text-top{
+        background-color: var(--navbarhighlight);
+        text-align: left;
+        width:fit-content;
+        margin-right:30%;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        font-size:1.2rem;
+        cursor: default;
+    }
+    .about-me-text-bottom{
+        background-color: var(--navbarhighlight);
+        text-align: right;
+        width:fit-content;
+        margin-left:30%;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        font-size:1.2rem;
+        cursor: default;
+    }
+    a{
+        color: inherit;
+    }
 </style>
 <script>const currentPage = 'home'</script>
 <head>
-  <title>
-    About Me | Ben Bredesen's Portfolio
-  </title>
-  <link rel="icon" type="image/x-icon" href="../images/page-icon.ico">
-  <link rel="canonical" href="https://benbredesen.github.io/benb-portfolio/home-page">
-  <link rel="stylesheet" href="navbar.css">
+    <title>
+        About Me | Ben Bredesen's Portfolio
+    </title>
+    <link rel="icon" type="image/x-icon" href="../images/page-icon.ico">
+    <link rel="canonical" href="https://benbredesen.github.io/benb-portfolio/home-page">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
 <div class="nav-bar">
@@ -56,43 +82,46 @@
     <h2 class="nav-item-selected" id="navbar-home">About-Me</h2>
     <h2 class="nav-item" id="navbar-work">My Work</h2>
     <h2 class="nav-item" id="navbar-other">Other</h2>
-  </div>
-  <br><br><br><br>
-  <!-- <h1>
-    <a href="my-work.html">P</a>
-  </h1> -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="about-me">
+</div>
+<br><br><br><br>
+<!-- <h1>
+  <a href="my-work.html">P</a>
+</h1> -->
+<br>
+<br>
+<br>
+<br>
+<div class="about-me">
     <div>
-      <img class="running-image" src="../images/running-image.png" alt="tf running img">
-      <div class="about-me-text">
-        <h2>
-          <b>
-            About Me
-          </b>
-        </h2>
-        <p>
-          I'm a high school student living in Minnesota.<br>
-          Outside of school, I enjoy running track in the winter, spring, and summer.
-        </p>
-      </div>
-      <br><br><br>
-      <div class="about-me-text">
-        <h2>
-          <b>
-            My Coding Experience
-          </b>
-        </h2>
-        <p>
-          I also program in my free time. I've used Python, Javascript, HTML, CSS, Java, and Godot. My more recent work can be found on the <a href="my-work.html">My Work</a> page.
-        </p>
-      </div>
+        <img class="aboutme-image-top" src="../images/running-image-wide.png" alt="tf running img">
+        <div class="about-me-text-top">
+            <h2>
+                <b>
+                    About Me
+                </b>
+            </h2>
+            <p>
+                I'm a high school student living in Minnesota.<br>
+                Outside of school, I enjoy running track in the winter, spring, and summer.
+            </p>
+        </div>
+        <img class="aboutme-image-bottom" src="../images/xc-team.png" alt="xc team img">
+        <br><br><br>
+        <div class="about-me-text-bottom">
+            <h2>
+                <b>
+                    My Coding Experience
+                </b>
+            </h2>
+            <p>
+                In the last few years, I've used Python, Javascript,
+                HTML, CSS, Java, and Godot. I've used these languages to create a variety of projects, from games to
+                data analysis, many of which I've uploaded to this website. Those projects can be found on the <a href="my-work.html">My Work</a> page.
+            </p>
+        </div>
 
     </div>
-  </div>
+</div>
 </body>
 
 
